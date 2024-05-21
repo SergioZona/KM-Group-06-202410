@@ -27,6 +27,20 @@ Es importante destacar que, para que un problema funcione correctamente, debe in
   
 Gemini automáticamente extrae los parámetros necesarios para que funcione. En caso de que algún parámetro no se lea adecuadamente, aparecerá el siguiente mensaje:
 
-`
+```bash
 "No se encontró información que se ajuste al dominio de conocimiento. Por favor detalle: el tipo, el problema, la etapa y la complejidad que afectan la aplicación."
-`
+```
+
+**Buen ejemplo** que el árbol de decisión dará una respuesta satisfactoria:
+
+```bash
+problem = "Tengo un problema de seguridad en una aplicación front de tamaño mediano, estamos en un desarrollo inicial pero no comprendo ¿Qué puede mejorar?"
+```
+
+**Mal ejemplo** que el árbol de decisión ignorará:
+
+```bash
+problem = "El café no me gusta, el sabor es un poco amargo."
+```
+
+
